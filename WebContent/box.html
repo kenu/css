@@ -5,21 +5,39 @@
 <title>Box model</title>
 <style type="text/css">
 ul {
-  background: yellow;
-  margin: 12px 12px 12px 12px;
-  padding: 3px 3px 3px 3px;
+	background: yellow;
+	margin: 12px 12px 12px 12px;
+	padding: 3px 3px 3px 3px;
 }
+
 li {
-  color: white;
-  background: blue;
-  margin: 12px 12px 12px 12px;
-  padding: 12px 0px 12px 12px;
-  list-style: none;
+	color: white;
+	background: blue;
+	margin: 12px 12px 12px 12px;
+	padding: 12px 0px 12px 12px;
+	list-style: none;
 }
+
 li.withborder {
-  border-style: dashed;
-  border-width: medium;        /* sets border width on all sides */
-  border-color: lime;
+	border-style: dashed;
+	border-width: medium; /* sets border width on all sides */
+	border-color: lime;
+}
+
+div {
+	background: #ffeeff;
+	border: 1px solid #0f0;
+	width: 400px;
+	height: 200px;
+}
+
+p {
+	border: 3px dashed #888;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 </style>
 </head>
@@ -29,5 +47,10 @@ li.withborder {
 <li class="withborder">Second element of list is a bit longer to illustrate wrapping.
 </li>
 </ul>
+
+<div>
+text
+<p>other text</p>
+</div>
 </body>
 </html>
